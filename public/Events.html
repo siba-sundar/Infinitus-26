@@ -133,7 +133,7 @@
 
                     <!-- Video Container -->
                     <div class="menu-video-container">
-                        <video class="menu-video" autoplay muted loop>
+                        <video class="menu-video" autoplay muted loop playsinline>
                             <source src="../assets/videos/video-01.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -302,9 +302,12 @@
             scrollLocked = true;
             document.body.style.overflow = 'hidden';
 
-            // Play menu video if available
+            // Play menu video only on desktop (not on mobile/tablet)
+            const isMobile = window.matchMedia('(max-width: 900px)').matches ||
+                ('ontouchstart' in window) ||
+                (navigator.maxTouchPoints > 0);
             const menuVideo = document.querySelector('.menu-video');
-            if (menuVideo) {
+            if (menuVideo && !isMobile) {
                 menuVideo.play().catch(e => {
                     console.log('Menu video play failed:', e);
                 });

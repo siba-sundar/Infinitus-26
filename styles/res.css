@@ -665,6 +665,10 @@
     display: none !important;
   }
 
+  .menu-video {
+    display: none !important;
+  }
+
   .menu-bottom-options {
     gap: 15px;
   }
@@ -704,6 +708,10 @@
   }
 
   .menu-video-container {
+    display: none !important;
+  }
+
+  .menu-video {
     display: none !important;
   }
 

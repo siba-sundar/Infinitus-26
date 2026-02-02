@@ -1,540 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Non-Technical Events</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/res.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/monument-extended"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Non-Technical Events</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/res.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "t2frh4w205");
-    </script>
-  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet" />
 
-  <body>
-    <div class="main-content">
-      <div class="events-loader">
-        <img src="/assets/noise-2.gif" class="noise" />
-        <div class="ev-one">Non Technical<br />Events</div>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "t2frh4w205");
+  </script>
+</head>
 
-        <div class="h-scroll laptop-scroll-text">
-          Navigate by scrolling to discover events.
-        </div>
+<body>
+  <div class="main-content">
+    <div class="events-loader">
+      <img src="/assets/noise-2.gif" class="noise" />
+      <div class="ev-one">Non Technical<br />Events</div>
 
-        <div class="h-scroll phone-scroll-text">
-          Navigate by scrolling sideways to discover events.
-        </div>
-
-        <div class="items"></div>
+      <div class="h-scroll laptop-scroll-text">
+        Navigate by scrolling to discover events.
       </div>
 
-      <div class="section-1">
-        <img src="../assets/noise-2.gif" class="noise" />
-        <audio
-          id="hover-music"
-          src="./music/link-music.wav"
-          preload="auto"
-        ></audio>
-        <div id="flicker" class="scroll-text">Scroll</div>
+      <div class="h-scroll phone-scroll-text">
+        Navigate by scrolling sideways to discover events.
+      </div>
 
-        <div class="h-scroll-fix laptop-scroll-text">
-          Navigate by scrolling to discover events.
+      <div class="items"></div>
+    </div>
+
+    <div class="section-1">
+      <img src="../assets/noise-2.gif" class="noise" />
+      <audio id="hover-music" src="./music/link-music.wav" preload="auto"></audio>
+      <div id="flicker" class="scroll-text">Scroll</div>
+
+      <div class="h-scroll-fix laptop-scroll-text">
+        Navigate by scrolling to discover events.
+      </div>
+
+      <div class="h-scroll-fix phone-scroll-text">
+        Navigate by scrolling sideways to discover events.
+      </div>
+
+      <!-- Header -->
+      <nav class="navbar href-music">
+        <div class="navbar-left">
+          <!-- Logo Link -->
+          <a href="../index.html" class="nav-logo">
+            <img src="/imgs/official.webp" alt="Logo" class="logo" />
+          </a>
+          <!-- Navigation Links -->
+          <a href="https://www.google.com/search?q=srm+ap+&sca_esv=37b8e5acbf81c988&sxsrf=ADLYWIL5sVBdyU7Lw-a7R9cV0T3xBOKLEg%3A1736312214056&ei=lgV-Z8eNA4uW4-EPv4m-0Qw&ved=0ahUKEwjHsPOFq-WKAxULyzgGHb-EL8oQ4dUDCBA&uact=5&oq=srm+ap+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3NybSBhcCAyChAjGIAEGCcYigUyBRAAGIAEMgUQABiABDIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBgUGIcCMgUQABiABEi3BlDQBFjQBHACeAGQAQCYAVigAViqAQExuAEDyAEA-AEBmAIDoAJgwgIKEAAYsAMY1gQYR8ICDRAuGIAEGLADGEMYigWYAwCIBgGQBgmSBwEzoAfyCA&sclient=gws-wiz-serp"
+            class="nav-link" id="timeDisplay"></a>
         </div>
-
-        <div class="h-scroll-fix phone-scroll-text">
-          Navigate by scrolling sideways to discover events.
+        <div class="navbar-right">
+          <div class="navbar-effect">
+            <a href="#" class="nav-link href-music menu-button" id="menu-button" aria-label="Open menu">Menu</a>
+          </div>
         </div>
+      </nav>
 
-        <!-- Header -->
-        <nav class="navbar href-music">
-          <div class="navbar-left">
-            <!-- Logo Link -->
-            <a href="../index.html" class="nav-logo">
-              <img src="/imgs/official.webp" alt="Logo" class="logo" />
-            </a>
-            <!-- Navigation Links -->
-            <a
-              href="https://www.google.com/search?q=srm+ap+&sca_esv=37b8e5acbf81c988&sxsrf=ADLYWIL5sVBdyU7Lw-a7R9cV0T3xBOKLEg%3A1736312214056&ei=lgV-Z8eNA4uW4-EPv4m-0Qw&ved=0ahUKEwjHsPOFq-WKAxULyzgGHb-EL8oQ4dUDCBA&uact=5&oq=srm+ap+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3NybSBhcCAyChAjGIAEGCcYigUyBRAAGIAEMgUQABiABDIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBgUGIcCMgUQABiABEi3BlDQBFjQBHACeAGQAQCYAVigAViqAQExuAEDyAEA-AEBmAIDoAJgwgIKEAAYsAMY1gQYR8ICDRAuGIAEGLADGEMYigWYAwCIBgGQBgmSBwEzoAfyCA&sclient=gws-wiz-serp"
-              class="nav-link"
-              id="timeDisplay"
-            ></a>
-          </div>
-          <div class="navbar-right">
-            <div class="navbar-effect">
-              <a
-                href="#"
-                class="nav-link href-music menu-button"
-                id="menu-button"
-                aria-label="Open menu"
-                >Menu</a
-              >
+      <!-- NEW MENU OVERLAY -->
+      <div class="menu-overlay" id="menu-overlay">
+        <!-- Red Slide -->
+        <div class="red-slide"></div>
+
+        <!-- Menu Content -->
+        <div class="menu-content">
+          <!-- Left Side Menu Options -->
+          <div class="menu-left">
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="../index.html" class="menu-left-item">Home</a>
+              </div>
+              <!-- <span>01</span> -->
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="Events.html" class="menu-left-item">Events</a>
+              </div>
+              <!-- <span>02</span> -->
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="proshows.html" class="menu-left-item">Proshows</a>
+              </div>
+              <!-- <span>03</span> -->
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="aboutus.html" class="menu-left-item">About</a>
+              </div>
+              <!-- <span>04</span> -->
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="teams.html" class="menu-left-item">Team</a>
+              </div>
+              <!-- <span>05</span> -->
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="https://hacksrm25.vercel.app/" class="menu-left-item">Hacksrm</a>
+              </div>
+              <!-- <span>06</span> -->
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-link">
+                <div class="bg-hover"></div>
+                <a href="faq.html" class="menu-left-item">FAQs</a>
+              </div>
+              <!-- <span>07</span> -->
             </div>
           </div>
-        </nav>
 
-        <!-- NEW MENU OVERLAY -->
-        <div class="menu-overlay" id="menu-overlay">
-          <!-- Red Slide -->
-          <div class="red-slide"></div>
+          <!-- Right Side Content -->
+          <div class="menu-right">
+            <!-- Close Button -->
+            <button class="menu-close" id="menu-close">CLOSE</button>
 
-          <!-- Menu Content -->
-          <div class="menu-content">
-            <!-- Left Side Menu Options -->
-            <div class="menu-left">
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="../index.html" class="menu-left-item">Home</a>
-                </div>
-                <!-- <span>01</span> -->
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="Events.html" class="menu-left-item">Events</a>
-                </div>
-                <!-- <span>02</span> -->
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="proshows.html" class="menu-left-item">Proshows</a>
-                </div>
-                <!-- <span>03</span> -->
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="aboutus.html" class="menu-left-item">About</a>
-                </div>
-                <!-- <span>04</span> -->
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="teams.html" class="menu-left-item">Team</a>
-                </div>
-                <!-- <span>05</span> -->
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="https://hacksrm25.vercel.app/" class="menu-left-item"
-                    >Hacksrm</a
-                  >
-                </div>
-                <!-- <span>06</span> -->
-              </div>
-              <div class="menu-item">
-                <div class="menu-item-link">
-                  <div class="bg-hover"></div>
-                  <a href="faq.html" class="menu-left-item">FAQs</a>
-                </div>
-                <!-- <span>07</span> -->
-              </div>
+            <!-- Video Container -->
+            <div class="menu-video-container">
+              <video class="menu-video" autoplay muted loop playsinline>
+                <source src="/assets/videos/video-01.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
-            <!-- Right Side Content -->
-            <div class="menu-right">
-              <!-- Close Button -->
-              <button class="menu-close" id="menu-close">CLOSE</button>
-
-              <!-- Video Container -->
-              <div class="menu-video-container">
-                <video class="menu-video" autoplay muted loop>
-                  <source src="/assets/videos/video-01.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <!-- Bottom Options -->
+            <div class="menu-bottom-options">
+              <div class="bottom-options">
+                <a href="./aboutus.html">About</a>
+                <a href="./cultural-events.html">Cultural</a>
               </div>
-
-              <!-- Bottom Options -->
-             <div class="menu-bottom-options">
-            <div class="bottom-options">
-              <a href="./aboutus.html">About</a>
-              <a href="./cultural-events.html">Cultural</a>
-            </div>
-            <div class="bottom-options">
-              <a href="./non-technical.html">Non-Technical</a>
-              <a href="./technical-events.html">Technical</a>
-            </div>
-            <div class="bottom-options">
-              <a href="https://www.instagram.com/srmuap.infinitus">Instagram</a>
-              <a href="https://linktr.ee/srmuapstudentcouncil?utm_source=linktree_profile_share&ltsid=b6437cbc-8d67-4dd9-b597-26880697f2c6">Linktree</a>
-            </div>
-            </div>
+              <div class="bottom-options">
+                <a href="./non-technical.html">Non-Technical</a>
+                <a href="./technical-events.html">Technical</a>
+              </div>
+              <div class="bottom-options">
+                <a href="https://www.instagram.com/srmuap.infinitus">Instagram</a>
+                <a
+                  href="https://linktr.ee/srmuapstudentcouncil?utm_source=linktree_profile_share&ltsid=b6437cbc-8d67-4dd9-b597-26880697f2c6">Linktree</a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- content of the page -->
+      <!-- content of the page -->
 
-        <div class="slider">
-          <div class="slider-wrapper">
-            <!-- Original slides (we will clone them dynamically) -->
-            <div
-              class="slide"
-              data-title="Charmistry - Mouldit moments"
-              data-desc="A hands-on creative session where participants learn to craft customized 
-phone charms using Mouldit clay."
-              data-img="/Posters/apex trrails.webp"
-              data-img2="./assets/img2.webp"
-            >
-              <img
-                src="/Posters/apex trails.png"
-                alt="img1"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb34QRyns/S909-IBVQselEkkC0Jbi2A/view?utm_content=DAGb34QRyns&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8e67818d65"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
+      <div class="slider">
+        <div class="slider-wrapper">
+          <!-- Original slides (we will clone them dynamically) -->
+          <div class="slide" data-title="Charmistry - Mouldit moments" data-desc="A hands-on creative session where participants learn to craft customized 
+phone charms using Mouldit clay." data-img="/Posters/apex trrails.webp" data-img2="./assets/img2.webp">
+            <img src="/Posters/apex trails.png" alt="img1" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb34QRyns/S909-IBVQselEkkC0Jbi2A/view?utm_content=DAGb34QRyns&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8e67818d65"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
 
 
-              
-            </div>
-            <div
-              class="slide"
-              data-title="The Art Heist"
-              data-desc="A story-driven escape challenge inspired by
-Ocean’s Eleven and museum heist scenarios.Teams solve themed puzzles to steal the “Golden Canvas” without triggering alarms."
-              data-img="/Posters/art heist.png"
-              data-img2="./assets/img3.webp"
-            >
-              <img
-                src="/Posters/art heist.png"
-                alt="img2"
-                class="slide-link"
-              />
 
-              <a
-                href="https://www.canva.com/design/DAGb36azm1o/op3lBXoj2csPh4_g4SnYKQ/view?utm_content=DAGb36azm1o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h46a95b6163"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-            <div
-              class="slide"
-              data-title="Among Us: Real Life Edition"
-              data-desc="Experience a real-life Among Us, where trust & teamwork are vital & deception decides destiny!. Crewmates complete tasks to survive, while hidden Imposters deceive and eliminate without being caught.
-"
-              data-img="/Posters/among us.png"
-              data-img2="./assets/img4.webp"
-            >
-              <img
-                src="/Posters/among us.png"
-                alt="img3"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb35hmuYI/yfK7JyRTlWJP1mAqyOSatA/view?utm_content=DAGb35hmuYI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dd6527a9e"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-            <div
-              class="slide"
-              data-title="Chronicles of Crime"
-              data-desc="A multi-stage competition that challenges
-participants to think like detectives."
-              data-img="/Posters/chronicle of crimes.png"
-              data-img2="./assets/img5.webp"
-            >
-              <img
-                src="/Posters/chronicle of crimes.png"
-                alt="img4"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
+          </div>
+          <div class="slide" data-title="The Art Heist"
+            data-desc="A story-driven escape challenge inspired by
+Ocean’s Eleven and museum heist scenarios.Teams solve themed puzzles to steal the “Golden Canvas” without triggering alarms." data-img="/Posters/art heist.png"
+            data-img2="./assets/img3.webp">
+            <img src="/Posters/art heist.png" alt="img2" class="slide-link" />
 
-             <div
-              class="slide"
-              data-title="Horror Escape room"
-              data-desc="The event “Saga of the Divine” celebrates the grandeur of ancient gods 
+            <a href="https://www.canva.com/design/DAGb36azm1o/op3lBXoj2csPh4_g4SnYKQ/view?utm_content=DAGb36azm1o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h46a95b6163"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+          <div class="slide" data-title="Among Us: Real Life Edition" data-desc="Experience a real-life Among Us, where trust & teamwork are vital & deception decides destiny!. Crewmates complete tasks to survive, while hidden Imposters deceive and eliminate without being caught.
+" data-img="/Posters/among us.png" data-img2="./assets/img4.webp">
+            <img src="/Posters/among us.png" alt="img3" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb35hmuYI/yfK7JyRTlWJP1mAqyOSatA/view?utm_content=DAGb35hmuYI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4dd6527a9e"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+          <div class="slide" data-title="Chronicles of Crime" data-desc="A multi-stage competition that challenges
+participants to think like detectives." data-img="/Posters/chronicle of crimes.png" data-img2="./assets/img5.webp">
+            <img src="/Posters/chronicle of crimes.png" alt="img4" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+
+          <div class="slide" data-title="Horror Escape room" data-desc="The event “Saga of the Divine” celebrates the grandeur of ancient gods 
 and mythology bybringing to life majestic styles and mythical tales through a captivating fashion walk.The event will be a vibrant cultural spectacle that highlights artistry, storytelling, and fashion
-innovation."
-              data-img="/Posters/escape room.png"
-              data-img2="./assets/img5.webp"
-            >
-              <img
-                src="/Posters/escape room.png"
-                alt="img4"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
+innovation." data-img="/Posters/escape room.png" data-img2="./assets/img5.webp">
+            <img src="/Posters/escape room.png" alt="img4" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
 
-             <div
-              class="slide"
-              data-title="Global Fusion: Trivia Meets Diplomacy"
-              data-desc="The event tests participants on quick thinking, global awareness, teamwork, speech clarity, and crisis handling."
-              data-img="/Posters/global fusion.png"
-              data-img2="./assets/img5.webp"
-            >
-              <img
-                src="/Posters/global fusion.png"
-                alt="img4"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
+          <div class="slide" data-title="Global Fusion: Trivia Meets Diplomacy"
+            data-desc="The event tests participants on quick thinking, global awareness, teamwork, speech clarity, and crisis handling."
+            data-img="/Posters/global fusion.png" data-img2="./assets/img5.webp">
+            <img src="/Posters/global fusion.png" alt="img4" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
 
-             <div
-              class="slide"
-              data-title="Herbal Quest"
-              data-desc="Herbal Quest is a simple nature-based treasure hunt where teams 
-explore campus plants and complete herbal-themed tasks."
-              data-img="/Posters/Herbal Quest.png"
-              data-img2="./assets/img5.webp"
-            >
-              <img
-                src="/Posters/Herbal Quest.png"
-                alt="img4"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-             <div
-              class="slide"
-              data-title="Anime Treasure Hunt: Multiversal Rush for the OnePiece"
-              data-desc="An anime themed Treasure hunt where you have to find 4 poneglyphs 
+          <div class="slide" data-title="Herbal Quest" data-desc="Herbal Quest is a simple nature-based treasure hunt where teams 
+explore campus plants and complete herbal-themed tasks." data-img="/Posters/Herbal Quest.png"
+            data-img2="./assets/img5.webp">
+            <img src="/Posters/Herbal Quest.png" alt="img4" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+          <div class="slide" data-title="Anime Treasure Hunt: Multiversal Rush for the OnePiece" data-desc="An anime themed Treasure hunt where you have to find 4 poneglyphs 
 and through that find the hidden, also some hidden side
 quests that can help along the way. This event will have
-clues for multiple anime not just one piece"
-              data-img="/Posters/Anime Hunt.png"
-              data-img2="./assets/img5.webp"
-            >
-              <img
-                src="/Posters/Anime Hunt.png"
-                alt="img4"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-             <div
-              class="slide"
-              data-title="Chaos Hour"
-              data-desc="Chaos Hour blends fun, mindfulness, and connection - transforming “wellness” from a quiet idea into a dynamic, laughter-filled experience.
+clues for multiple anime not just one piece" data-img="/Posters/Anime Hunt.png" data-img2="./assets/img5.webp">
+            <img src="/Posters/Anime Hunt.png" alt="img4" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+          <div class="slide" data-title="Chaos Hour" data-desc="Chaos Hour blends fun, mindfulness, and connection - transforming “wellness” from a quiet idea into a dynamic, laughter-filled experience.
 Along with another online event Reel-A-Live, where anyone can express themselves through 30-second reels on Instagram, celebrating individuality, humor, and positivity.
-"
-              data-img="/Posters/Chaos Hour.png"
-              data-img2="./assets/img5.webp"
-            >
-              <img
-                src="/Posters/Chaos Hour.png"
-                alt="img4"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-             
-            <div
-              class="slide"
-              data-title="Cube Clash "
-              data-desc="Two competitions for participants. One 3 x 3 cube clash and another mosaic challenge"
-              data-img="/Posters/cube clash.png"
-              data-img2="./assets/img1.webp"
-            >
-              <img
-                src="/Posters/cube clash.png"
-                alt="img5"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-            <div
-              class="slide"
-              data-title="Saga of the Divine"
-              data-desc="The event “Saga of the Divine” celebrates the grandeur of ancient gods 
+" data-img="/Posters/Chaos Hour.png" data-img2="./assets/img5.webp">
+            <img src="/Posters/Chaos Hour.png" alt="img4" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3yYN2jM/azPxShI9O57-zLu_cT0hfA/view?utm_content=DAGb3yYN2jM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he554b00ddc"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+
+          <div class="slide" data-title="Cube Clash "
+            data-desc="Two competitions for participants. One 3 x 3 cube clash and another mosaic challenge"
+            data-img="/Posters/cube clash.png" data-img2="./assets/img1.webp">
+            <img src="/Posters/cube clash.png" alt="img5" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+          <div class="slide" data-title="Saga of the Divine" data-desc="The event “Saga of the Divine” celebrates the grandeur of ancient gods 
 and mythology bybringing to life majestic styles and mythical tales through a captivating fashion walk.The event will be a vibrant cultural spectacle that highlights artistry, storytelling, and fashion
-innovation."
-              data-img="/Posters/saga of devine.png"
-              data-img2="./assets/img1.webp"
-            >
-              <img
-                src="/Posters/saga of devine.png"
-                alt="img5"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-            <div
-              class="slide"
-              data-title="Charmistry - Mouldit moments"
-              data-desc="A hands-on creative session where participants learn to craft customized 
-phone charms using Mouldit clay."
-              data-img="/Posters/charmistry.png"
-              data-img2="./assets/img1.webp"
-            >
-              <img
-                src="/Posters/charmistry.png"
-                alt="img5"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-            <div
-              class="slide"
-              data-title="Blind Hunt - Chromatic Chaos"
-              data-desc="An interactive photography-based competition designed to test coordination, communication, and
-creative instinct."
-              data-img="/Posters/blind hunt.png"
-              data-img2="./assets/img1.webp"
-            >
-              <img
-                src="/Posters/blind hunt.png"
-                alt="img5"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-            </div>
-            <div
-              class="slide"
-              data-title="Bizathon - Hack the chaos!"
-              data-desc=" A one-day, high-energy entrepreneurial hackathon that blends innovation, humor, and chaos.Rounds are a mix up of Shark Tank, Hackathon, Meme Fest & Stand-Up Comedy, offering students an unforgettable mix of learning and laughter.
-"
-              data-img="/Posters/bizathon.png"
-              data-img2="./assets/img1.webp"
-            >
-              <img
-                src="/Posters/bizathon.png"
-                alt="img5"
-                class="slide-link"
-              />
-              <a
-                href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
-                target="_blank"
-                class="rule-link"
-                >[ Register ]</a
-              >
-              <div class="slide-link">View</div>
-
-              
-            </div>
-
-            <a href="technical-events.html">
-              <div class="slide">
-                <img src="/Posters/tech-nav.png" alt="img3" />
-              </div>
-            </a>
-            <a href="cultural-events.html">
-              <div class="slide">
-                <img src="/Posters/cult-nav.png" alt="img3" />
-              </div>
-            </a>
+innovation." data-img="/Posters/saga of devine.png" data-img2="./assets/img1.webp">
+            <img src="/Posters/saga of devine.png" alt="img5" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
           </div>
-        </div>
-
-        <div class="one-desc">
-          <div class="content-wrapper">
-            <div class="close-container">
-              <div class="one-desc-close shuffle-text">[CLOSE]</div>
-            </div>
-
-            <p class="title-text"></p>
-            <div class="event-images">
-              <img class="desc-img" src="" alt="Slide Image" />
-              <img class="desc-img2" src="" alt="Slide Image" />
-            </div>
-            <p class="desc-text"></p>
+          <div class="slide" data-title="Charmistry - Mouldit moments" data-desc="A hands-on creative session where participants learn to craft customized 
+phone charms using Mouldit clay." data-img="/Posters/charmistry.png" data-img2="./assets/img1.webp">
+            <img src="/Posters/charmistry.png" alt="img5" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
           </div>
-        </div>
+          <div class="slide" data-title="Blind Hunt - Chromatic Chaos" data-desc="An interactive photography-based competition designed to test coordination, communication, and
+creative instinct." data-img="/Posters/blind hunt.png" data-img2="./assets/img1.webp">
+            <img src="/Posters/blind hunt.png" alt="img5" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
+          </div>
+          <div class="slide" data-title="Bizathon - Hack the chaos!" data-desc=" A one-day, high-energy entrepreneurial hackathon that blends innovation, humor, and chaos.Rounds are a mix up of Shark Tank, Hackathon, Meme Fest & Stand-Up Comedy, offering students an unforgettable mix of learning and laughter.
+" data-img="/Posters/bizathon.png" data-img2="./assets/img1.webp">
+            <img src="/Posters/bizathon.png" alt="img5" class="slide-link" />
+            <a href="https://www.canva.com/design/DAGb3wWgT_g/Fa39Wj1muIqUpCzJmERxsQ/view?utm_content=DAGb3wWgT_g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h47690bc1d5"
+              target="_blank" class="rule-link">[ Register ]</a>
+            <div class="slide-link">View</div>
 
-        <!-- <div id="music-player">
+
+          </div>
+
+          <a href="technical-events.html">
+            <div class="slide">
+              <img src="/Posters/tech-nav.png" alt="img3" />
+            </div>
+          </a>
+          <a href="cultural-events.html">
+            <div class="slide">
+              <img src="/Posters/cult-nav.png" alt="img3" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="one-desc">
+        <div class="content-wrapper">
+          <div class="close-container">
+            <div class="one-desc-close shuffle-text">[CLOSE]</div>
+          </div>
+
+          <p class="title-text"></p>
+          <div class="event-images">
+            <img class="desc-img" src="" alt="Slide Image" />
+            <img class="desc-img2" src="" alt="Slide Image" />
+          </div>
+          <p class="desc-text"></p>
+        </div>
+      </div>
+
+      <!-- <div id="music-player">
                 <audio id="bg-music" autoplay loop>
                     <source src="../music/Sanity.wav" type="audio/wav">
                     Your browser does not support the audio element.
@@ -552,9 +346,9 @@ creative instinct."
                 </div>
             </div> -->
 
-        <!-- content ends here -->
+      <!-- content ends here -->
 
-        <!-- <div class="bottom-text">
+      <!-- <div class="bottom-text">
                 <span class="bottom-text__left shuffle-text">Amaravati, IN</span>
                 <span class="bottom-text__center ">
                     <a href="javascript:void(0);" onclick="openMusicPlayer()">
@@ -563,118 +357,119 @@ creative instinct."
                 </span>
                 <span class="bottom-text__right shuffle-text">2025</span>
             </div> -->
-      </div>
     </div>
+  </div>
 
-    <script src="/scripts/events-loader.js"></script>
-    <script src="/scripts/favicon.js"></script>
-    <script src="/scripts/cursor.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/time.js"></script>
-    <script src="/scripts/handle-slider.js"></script>
-    <script src="/scripts/events-panels.js"></script>
+  <script src="/scripts/events-loader.js"></script>
+  <script src="/scripts/favicon.js"></script>
+  <script src="/scripts/cursor.js"></script>
+  <script src="/scripts/menu.js"></script>
+  <script src="/scripts/time.js"></script>
+  <script src="/scripts/handle-slider.js"></script>
+  <script src="/scripts/events-panels.js"></script>
 
-    <!-- Menu Hover Effects -->
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="/scripts/menu-hover.js"></script>
+  <!-- Menu Hover Effects -->
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="/scripts/menu-hover.js"></script>
 
-    <script src="/scripts/link-hover.js"></script>
-    <script src="/scripts/music.js"></script>
-    <script src="/scripts/scroll-text.js"></script>
+  <script src="/scripts/link-hover.js"></script>
+  <script src="/scripts/music.js"></script>
+  <script src="/scripts/scroll-text.js"></script>
 
-    <script>
-      // Menu functionality adapted from aboutus.html
-      const menuButton = document.getElementById("menu-button");
-      const menuOverlay = document.getElementById("menu-overlay");
-      const menuClose = document.getElementById("menu-close");
+  <script>
+    // Menu functionality adapted from aboutus.html
+    const menuButton = document.getElementById("menu-button");
+    const menuOverlay = document.getElementById("menu-overlay");
+    const menuClose = document.getElementById("menu-close");
 
-      let menuOpen = false;
-      let isMenuClosing = false;
-      let scrollLocked = false;
+    let menuOpen = false;
+    let isMenuClosing = false;
+    let scrollLocked = false;
 
-      function openMenu() {
-        if (isMenuClosing) return;
+    function openMenu() {
+      if (isMenuClosing) return;
 
-        menuOpen = true;
+      menuOpen = true;
+      isMenuClosing = false;
+
+      // Remove closing class if it exists
+      menuOverlay.classList.remove("closing");
+
+      // Hide menu button immediately
+      menuButton.style.opacity = "0";
+      menuButton.style.pointerEvents = "none";
+
+      // Add active class after a tiny delay to ensure CSS reset
+      setTimeout(() => {
+        menuOverlay.classList.add("active");
+      }, 10);
+
+      // Disable main scroll when menu is open
+      scrollLocked = true;
+      document.body.style.overflow = "hidden";
+
+      // Play menu video if available
+      const menuVideo = document.querySelector(".menu-video");
+      if (menuVideo) {
+        menuVideo.play().catch((e) => {
+          console.log("Menu video play failed:", e);
+        });
+      }
+    }
+
+    function closeMenu() {
+      if (!menuOpen || isMenuClosing) return;
+
+      isMenuClosing = true;
+
+      // Start closing animation
+      menuOverlay.classList.add("closing");
+      menuOverlay.classList.remove("active");
+
+      // Show menu button with delay
+      setTimeout(() => {
+        menuButton.style.opacity = "1";
+        menuButton.style.pointerEvents = "auto";
+      }, 400);
+
+      // Pause menu video if available
+      const menuVideo = document.querySelector(".menu-video");
+      if (menuVideo) {
+        menuVideo.pause();
+      }
+
+      // Wait for animation to complete before resetting state
+      setTimeout(() => {
+        menuOpen = false;
         isMenuClosing = false;
-
-        // Remove closing class if it exists
         menuOverlay.classList.remove("closing");
 
-        // Hide menu button immediately
-        menuButton.style.opacity = "0";
-        menuButton.style.pointerEvents = "none";
+        // Re-enable main scroll when menu is closed
+        scrollLocked = false;
+        document.body.style.overflow = "";
+      }, 900);
+    }
 
-        // Add active class after a tiny delay to ensure CSS reset
-        setTimeout(() => {
-          menuOverlay.classList.add("active");
-        }, 10);
+    // Event Listeners
+    if (menuButton) menuButton.addEventListener("click", openMenu);
+    if (menuClose) menuClose.addEventListener("click", closeMenu);
 
-        // Disable main scroll when menu is open
-        scrollLocked = true;
-        document.body.style.overflow = "hidden";
-
-        // Play menu video if available
-        const menuVideo = document.querySelector(".menu-video");
-        if (menuVideo) {
-          menuVideo.play().catch((e) => {
-            console.log("Menu video play failed:", e);
-          });
-        }
+    // Close menu on escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menuOpen && !isMenuClosing) {
+        closeMenu();
       }
+    });
 
-      function closeMenu() {
-        if (!menuOpen || isMenuClosing) return;
-
-        isMenuClosing = true;
-
-        // Start closing animation
-        menuOverlay.classList.add("closing");
-        menuOverlay.classList.remove("active");
-
-        // Show menu button with delay
-        setTimeout(() => {
-          menuButton.style.opacity = "1";
-          menuButton.style.pointerEvents = "auto";
-        }, 400);
-
-        // Pause menu video if available
-        const menuVideo = document.querySelector(".menu-video");
-        if (menuVideo) {
-          menuVideo.pause();
-        }
-
-        // Wait for animation to complete before resetting state
-        setTimeout(() => {
-          menuOpen = false;
-          isMenuClosing = false;
-          menuOverlay.classList.remove("closing");
-
-          // Re-enable main scroll when menu is closed
-          scrollLocked = false;
-          document.body.style.overflow = "";
-        }, 900);
-      }
-
-      // Event Listeners
-      if (menuButton) menuButton.addEventListener("click", openMenu);
-      if (menuClose) menuClose.addEventListener("click", closeMenu);
-
-      // Close menu on escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && menuOpen && !isMenuClosing) {
+    // Close menu when clicking on menu overlay background
+    if (menuOverlay) {
+      menuOverlay.addEventListener("click", (e) => {
+        if (e.target === menuOverlay && menuOpen && !isMenuClosing) {
           closeMenu();
         }
       });
+    }
+  </script>
+</body>
 
-      // Close menu when clicking on menu overlay background
-      if (menuOverlay) {
-        menuOverlay.addEventListener("click", (e) => {
-          if (e.target === menuOverlay && menuOpen && !isMenuClosing) {
-            closeMenu();
-          }
-        });
-      }
-    </script>
-  </body>
 </html>

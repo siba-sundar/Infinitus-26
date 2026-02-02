@@ -1,261 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Infinitus '26</title>
-    <link rel="stylesheet" href="../styles/style.css" />
 
-    <link rel="stylesheet" href="../styles/res.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinitus '26</title>
+  <link rel="stylesheet" href="../styles/style.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/monument-extended"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="../styles/res.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "t2frh4w205");
-    </script>
-  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet" />
 
-  <body>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "t2frh4w205");
+  </script>
+</head>
+
+<body>
+  <img src="/assets/noise-2.gif" class="noise" />
+  <audio id="hover-music" src="./music/link-music.wav" preload="auto"></audio>
+
+  <div class="events-loader">
     <img src="/assets/noise-2.gif" class="noise" />
-    <audio id="hover-music" src="./music/link-music.wav" preload="auto"></audio>
-
-    <div class="events-loader">
-      <img src="/assets/noise-2.gif" class="noise" />
-      <div class="ev-one">
-        Our<br />
-        Story
-      </div>
-
-      <div class="h-scroll">
-        Discover who we are<br />
-        and what drives us.
-      </div>
-
-      <div class="items"></div>
+    <div class="ev-one">
+      Our<br />
+      Story
     </div>
 
-    <!-- Header -->
-    <nav class="navbar href-music">
-      <div class="navbar-left">
-        <!-- Logo Link -->
-        <a href="../index.html" class="nav-logo">
-          <img src="/imgs/official.webp" alt="Logo" class="logo" />
-        </a>
-        <!-- Navigation Links -->
-        <a
-          href="https://www.google.com/search?q=srm+ap+&sca_esv=37b8e5acbf81c988&sxsrf=ADLYWIL5sVBdyU7Lw-a7R9cV0T3xBOKLEg%3A1736312214056&ei=lgV-Z8eNA4uW4-EPv4m-0Qw&ved=0ahUKEwjHsPOFq-WKAxULyzgGHb-EL8oQ4dUDCBA&uact=5&oq=srm+ap+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3NybSBhcCAyChAjGIAEGCcYigUyBRAAGIAEMgUQABiABDIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBgUGIcCMgUQABiABEi3BlDQBFjQBHACeAGQAQCYAVigAViqAQExuAEDyAEA-AEBmAIDoAJgwgIKEAAYsAMY1gQYR8ICDRAuGIAEGLADGEMYigWYAwCIBgGQBgmSBwEzoAfyCA&sclient=gws-wiz-serp"
-          class="nav-link"
-          id="timeDisplay"
-        ></a>
+    <div class="h-scroll">
+      Discover who we are<br />
+      and what drives us.
+    </div>
+
+    <div class="items"></div>
+  </div>
+
+  <!-- Header -->
+  <nav class="navbar href-music">
+    <div class="navbar-left">
+      <!-- Logo Link -->
+      <a href="../index.html" class="nav-logo">
+        <img src="/imgs/official.webp" alt="Logo" class="logo" />
+      </a>
+      <!-- Navigation Links -->
+      <a href="https://www.google.com/search?q=srm+ap+&sca_esv=37b8e5acbf81c988&sxsrf=ADLYWIL5sVBdyU7Lw-a7R9cV0T3xBOKLEg%3A1736312214056&ei=lgV-Z8eNA4uW4-EPv4m-0Qw&ved=0ahUKEwjHsPOFq-WKAxULyzgGHb-EL8oQ4dUDCBA&uact=5&oq=srm+ap+&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3NybSBhcCAyChAjGIAEGCcYigUyBRAAGIAEMgUQABiABDIFEC4YgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgoQABiABBgUGIcCMgUQABiABEi3BlDQBFjQBHACeAGQAQCYAVigAViqAQExuAEDyAEA-AEBmAIDoAJgwgIKEAAYsAMY1gQYR8ICDRAuGIAEGLADGEMYigWYAwCIBgGQBgmSBwEzoAfyCA&sclient=gws-wiz-serp"
+        class="nav-link" id="timeDisplay"></a>
+    </div>
+    <div class="navbar-right">
+      <div class="navbar-effect">
+        <a href="#" class="nav-link href-music menu-button" id="menu-button" aria-label="Open menu">Menu</a>
       </div>
-      <div class="navbar-right">
-        <div class="navbar-effect">
-          <a
-            href="#"
-            class="nav-link href-music menu-button"
-            id="menu-button"
-            aria-label="Open menu"
-            >Menu</a
-          >
+    </div>
+  </nav>
+
+  <!-- NEW MENU OVERLAY -->
+  <div class="menu-overlay" id="menu-overlay">
+    <!-- Red Slide -->
+    <div class="red-slide"></div>
+
+    <!-- Menu Content -->
+    <div class="menu-content">
+      <!-- Left Side Menu Options -->
+      <div class="menu-left">
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="../index.html" class="menu-left-item">Home</a>
+          </div>
+          <!-- <span>01</span> -->
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="Events.html" class="menu-left-item">Events</a>
+          </div>
+          <!-- <span>02</span> -->
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="proshows.html" class="menu-left-item">Proshows</a>
+          </div>
+          <!-- <span>03</span> -->
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="aboutus.html" class="menu-left-item">About</a>
+          </div>
+          <!-- <span>04</span> -->
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="teams.html" class="menu-left-item">Team</a>
+          </div>
+          <!-- <span>05</span> -->
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="https://hacksrm25.vercel.app/" class="menu-left-item">Hacksrm</a>
+          </div>
+          <!-- <span>06</span> -->
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-link">
+            <div class="bg-hover"></div>
+            <a href="faq.html" class="menu-left-item">FAQs</a>
+          </div>
+          <!-- <span>07</span> -->
         </div>
       </div>
-    </nav>
 
-    <!-- NEW MENU OVERLAY -->
-    <div class="menu-overlay" id="menu-overlay">
-      <!-- Red Slide -->
-      <div class="red-slide"></div>
+      <!-- Right Side Content -->
+      <div class="menu-right">
+        <!-- Close Button -->
+        <button class="menu-close" id="menu-close">CLOSE</button>
 
-      <!-- Menu Content -->
-      <div class="menu-content">
-        <!-- Left Side Menu Options -->
-        <div class="menu-left">
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="../index.html" class="menu-left-item">Home</a>
-            </div>
-            <!-- <span>01</span> -->
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="Events.html" class="menu-left-item">Events</a>
-            </div>
-            <!-- <span>02</span> -->
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="proshows.html" class="menu-left-item">Proshows</a>
-            </div>
-            <!-- <span>03</span> -->
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="aboutus.html" class="menu-left-item">About</a>
-            </div>
-            <!-- <span>04</span> -->
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="teams.html" class="menu-left-item">Team</a>
-            </div>
-            <!-- <span>05</span> -->
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="https://hacksrm25.vercel.app/" class="menu-left-item"
-                >Hacksrm</a
-              >
-            </div>
-            <!-- <span>06</span> -->
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-link">
-              <div class="bg-hover"></div>
-              <a href="faq.html" class="menu-left-item">FAQs</a>
-            </div>
-            <!-- <span>07</span> -->
-          </div>
+        <!-- Video Container -->
+        <div class="menu-video-container">
+          <video class="menu-video" autoplay muted loop playsinline>
+            <source src="/assets/videos/video-01.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
-        <!-- Right Side Content -->
-        <div class="menu-right">
-          <!-- Close Button -->
-          <button class="menu-close" id="menu-close">CLOSE</button>
-
-          <!-- Video Container -->
-          <div class="menu-video-container">
-            <video class="menu-video" autoplay muted loop>
-              <source src="/assets/videos/video-01.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+        <!-- Bottom Options -->
+        <div class="menu-bottom-options">
+          <div class="bottom-options">
+            <a href="./aboutus.html">About</a>
+            <a href="./cultural-events.html">Cultural</a>
           </div>
-
-          <!-- Bottom Options -->
-             <div class="menu-bottom-options">
-            <div class="bottom-options">
-              <a href="./aboutus.html">About</a>
-              <a href="./cultural-events.html">Cultural</a>
-            </div>
-            <div class="bottom-options">
-              <a href="./non-technical.html">Non-Technical</a>
-              <a href="./technical-events.html">Technical</a>
-            </div>
-            <div class="bottom-options">
-              <a href="https://www.instagram.com/srmuap.infinitus">Instagram</a>
-              <a href="https://linktr.ee/srmuapstudentcouncil?utm_source=linktree_profile_share&ltsid=b6437cbc-8d67-4dd9-b597-26880697f2c6">Linktree</a>
-            </div>
-            </div>
+          <div class="bottom-options">
+            <a href="./non-technical.html">Non-Technical</a>
+            <a href="./technical-events.html">Technical</a>
+          </div>
+          <div class="bottom-options">
+            <a href="https://www.instagram.com/srmuap.infinitus">Instagram</a>
+            <a
+              href="https://linktr.ee/srmuapstudentcouncil?utm_source=linktree_profile_share&ltsid=b6437cbc-8d67-4dd9-b597-26880697f2c6">Linktree</a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="sliding-intro-container">
-      <div class="sliding-intro">
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-        <span style="display: flex">
-          <div class="half1">WHO WE</div>
-          <div class="half1">ARE</div>
-        </span>
-      </div>
+  <div class="sliding-intro-container">
+    <div class="sliding-intro">
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
+      <span style="display: flex">
+        <div class="half1">WHO WE</div>
+        <div class="half1">ARE</div>
+      </span>
     </div>
-    <br />
-    <div class="infinitus-txt">
-      <span class="about-us-txt">About</span><br /><br />
+  </div>
+  <br />
+  <div class="infinitus-txt">
+    <span class="about-us-txt">About</span><br /><br />
 
-      The 2026 edition of Infinitus promises to be a defining moment in the
-      festival’s illustrious journey, bringing together a vibrant community of
-      over 12,000 students from diverse backgrounds. With an expected
-      participation of more than 7,000 individuals in an array of competitions
-      and showcases, this year’s event is set to ignite unparalleled creativity
-      and innovation. The digital reach of Infinitus '25 aims to surpass all
-      milestones, targeting over 20,000 engagements across social media
-      platforms, as attendees share their exhilarating moments and experiences.
-      The official website is primed to serve as a central hub for updates, with
-      projections of attracting more than 8,000 visitors, reflecting the growing
-      excitement and anticipation surrounding the event. Infinitus '25 is not
-      just a festival; it’s a cultural phenomenon, building on its legacy to
-      celebrate diversity, talent, and the unifying spirit of festivity, setting
-      an even higher benchmark for the years to come.
-    </div>
+    The 2026 edition of Infinitus promises to be a defining moment in the
+    festival’s illustrious journey, bringing together a vibrant community of
+    over 12,000 students from diverse backgrounds. With an expected
+    participation of more than 7,000 individuals in an array of competitions
+    and showcases, this year’s event is set to ignite unparalleled creativity
+    and innovation. The digital reach of Infinitus '25 aims to surpass all
+    milestones, targeting over 20,000 engagements across social media
+    platforms, as attendees share their exhilarating moments and experiences.
+    The official website is primed to serve as a central hub for updates, with
+    projections of attracting more than 8,000 visitors, reflecting the growing
+    excitement and anticipation surrounding the event. Infinitus '25 is not
+    just a festival; it’s a cultural phenomenon, building on its legacy to
+    celebrate diversity, talent, and the unifying spirit of festivity, setting
+    an even higher benchmark for the years to come.
+  </div>
 
-    <video class="abt-vid" autoplay muted loop>
-      <source src="/assets/dronefootage.mp4" type="video/webm" />
-    </video>
-    <br /><br />
-    <div class="wrapper" style="margin-top: -5%">
-      <div class="team-container">
-        <!-- Events -->
-        <div class="team">
-          <div class="team-heading">
-            <p class="team-heading-text">Student Affairs</p>
+  <video class="abt-vid" autoplay muted loop>
+    <source src="/assets/dronefootage.mp4" type="video/webm" />
+  </video>
+  <br /><br />
+  <div class="wrapper" style="margin-top: -5%">
+    <div class="team-container">
+      <!-- Events -->
+      <div class="team">
+        <div class="team-heading">
+          <p class="team-heading-text">Student Affairs</p>
+        </div>
+
+        <div class="team-member" onmouseover="showCard(4)" onmouseout="hideCard(4)" onclick="toggleCard(4)">
+          <span class="name">Mr Gurdeep Singh Narang</span>
+          <span class="role">Director</span>
+          <div class="card" id="card-4">
+            <img src="/imgs/director.png" />
           </div>
-
-          <div
-            class="team-member"
-            onmouseover="showCard(4)"
-            onmouseout="hideCard(4)"
-            onclick="toggleCard(4)"
-          >
-            <span class="name">Mr Gurdeep Singh Narang</span>
-            <span class="role">Director</span>
-            <div class="card" id="card-4">
-              <img src="/imgs/director.png" />
-            </div>
-          </div>
-          <!-- <div class="team-member" onmouseover="showCard(4)" onmouseout="hideCard(4)" onclick="toggleCard(4)">
+        </div>
+        <!-- <div class="team-member" onmouseover="showCard(4)" onmouseout="hideCard(4)" onclick="toggleCard(4)">
                         <span class="name">Ms Revathi Balakrishnan</span>
                         <span class="role">Associate Director</span>
                         <div class="card" id="card-4">
@@ -263,78 +245,82 @@
 
                         </div>
                     </div>                    -->
-        </div>
       </div>
     </div>
+  </div>
 
-    <div class="about-grid">
-      <div class="about-left"></div>
-      <div class="about-right">
-        <p>
-          <span class="about-us-txt">Director</span><br /><br />
-          <span class="about-us-para">
-            Infinitus 2026 stands as the ultimate testament to our collective spirit. A national arena where technical ingenuity converges with cultural brilliance. This festival is your platform to lead, to create, and to inspire.
+  <div class="about-grid">
+    <div class="about-left"></div>
+    <div class="about-right">
+      <p>
+        <span class="about-us-txt">Director</span><br /><br />
+        <span class="about-us-para">
+          Infinitus 2026 stands as the ultimate testament to our collective spirit. A national arena where technical
+          ingenuity converges with cultural brilliance. This festival is your platform to lead, to create, and to
+          inspire.
 
-Dream big. Prepare diligently. Step forward with confidence. Let us make this edition the most memorable one yet.
-            <br />
-            <br /> 
-          </span>
-          <span class="signature" >Gurdeep Singh Narang </span>, <span style="font-family:'Space Grotesk', sans-serif; font-size: 14px ;">STUDENT AFFAIRS</span>
-        </p>
-      </div>
-    </div>
-    <div class="wrapper" style="margin-top: -3%">
-      <div class="team-container">
-        <!-- Events -->
-        <div class="team">
-          <div class="team-heading">
-            <p class="team-heading-text">Student Affairs</p>
-          </div>
-
-          <div
-            class="team-member"
-            onmouseover="showCard(4)"
-            onmouseout="hideCard(4)"
-            onclick="toggleCard(4)"
-          >
-            <span class="name">Ms Revathi Balakrishnan</span>
-            <span class="role">Associate Director</span>
-            <div class="card" id="card-4">
-              <img src="/imgs/AD.jpg" />
-            </div>
-          </div>
-          <!-- <div class="team-member" onmouseover="showCard(4)" onmouseout="hideCard(4)" onclick="toggleCard(4)">
-                        <span class="name">Ms Revathi Balakrishnan</span>
-                        <span class="role">Associate Director</span>
-                        <div class="card" id="card-4">
-                            <img src="/imgs/AD.jpg">
-
-                        </div>
-                    </div>                    -->
-        </div>
-      </div>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-left"></div>
-      <div class="about-right">
-        <p>
-          <span class="about-us-txt">Associate Director</span><br />
+          Dream big. Prepare diligently. Step forward with confidence. Let us make this edition the most memorable one
+          yet.
           <br />
-          <span class="about-us-para">
-            Infinitus is a celebration of innovation, creativity, and student spirit. It brings together technology and culture on a single platform, encouraging students to explore ideas, showcase talent, and collaborate beyond classrooms.
+          <br />
+        </span>
+        <span class="signature">Gurdeep Singh Narang </span>, <span
+          style="font-family:'Space Grotesk', sans-serif; font-size: 14px ;">STUDENT AFFAIRS</span>
+      </p>
+    </div>
+  </div>
+  <div class="wrapper" style="margin-top: -3%">
+    <div class="team-container">
+      <!-- Events -->
+      <div class="team">
+        <div class="team-heading">
+          <p class="team-heading-text">Student Affairs</p>
+        </div>
 
-I appreciate the dedication of our student leaders, faculty advisors, and organizing teams in shaping this vibrant fest. I invite everyone to be part of Infinitus and experience the energy, excellence, and enthusiasm of our campus.
-            <br />
-            <br />
-          </span>
+        <div class="team-member" onmouseover="showCard(4)" onmouseout="hideCard(4)" onclick="toggleCard(4)">
+          <span class="name">Ms Revathi Balakrishnan</span>
+          <span class="role">Associate Director</span>
+          <div class="card" id="card-4">
+            <img src="/imgs/AD.jpg" />
+          </div>
+        </div>
+        <!-- <div class="team-member" onmouseover="showCard(4)" onmouseout="hideCard(4)" onclick="toggleCard(4)">
+                        <span class="name">Ms Revathi Balakrishnan</span>
+                        <span class="role">Associate Director</span>
+                        <div class="card" id="card-4">
+                            <img src="/imgs/AD.jpg">
 
-          <span class="signature" >Revathi Balakrishnan </span>, <span style="font-family:'Space Grotesk', sans-serif; font-size: 14px ;">STUDENT AFFAIRS</span>
-        </p>
+                        </div>
+                    </div>                    -->
       </div>
     </div>
+  </div>
 
-    <!-- <div class="bottom-text">
+  <div class="about-grid">
+    <div class="about-left"></div>
+    <div class="about-right">
+      <p>
+        <span class="about-us-txt">Associate Director</span><br />
+        <br />
+        <span class="about-us-para">
+          Infinitus is a celebration of innovation, creativity, and student spirit. It brings together technology and
+          culture on a single platform, encouraging students to explore ideas, showcase talent, and collaborate beyond
+          classrooms.
+
+          I appreciate the dedication of our student leaders, faculty advisors, and organizing teams in shaping this
+          vibrant fest. I invite everyone to be part of Infinitus and experience the energy, excellence, and enthusiasm
+          of our campus.
+          <br />
+          <br />
+        </span>
+
+        <span class="signature">Revathi Balakrishnan </span>, <span
+          style="font-family:'Space Grotesk', sans-serif; font-size: 14px ;">STUDENT AFFAIRS</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="bottom-text">
             <span class="bottom-text__left shuffle-text">Amaravati, IN</span>
             <span class="bottom-text__center ">
                 <a href="javascript:void(0);" onclick="openMusicPlayer()">
@@ -343,211 +329,212 @@ I appreciate the dedication of our student leaders, faculty advisors, and organi
             </span>
             <span class="bottom-text__right shuffle-text">2025</span>
         </div> -->
-    <br /><br />
-    <br /><br />
-    <br /><br />
+  <br /><br />
+  <br /><br />
+  <br /><br />
 
-    <div id="footer">
-      <div class="footerTop">
-        <div class="footerLogo">
-          <p>[TECHNO-CULTURAL FEST]</p>
-          <h1>INFINITUS</h1>
-        </div>
-
-        <div class="footerLinks">
-          <div class="footerColumn">
-            <p class="linkHead">[NAVIGATE]</p>
-            <div class="linkContainer">
-              <a href="./aboutus.html" class="links">
-                <p>001</p>
-                <p>ABOUT</p>
-              </a>
-              <a href="./proshows.html" class="links">
-                <p>002</p>
-                <p>PROSHOWS</p>
-              </a>
-              <a href="./technical-events.html" class="links">
-                <p>003</p>
-                <p>EVENTS</p>
-              </a>
-              <a href="https://hacksrm25.vercel.app/" class="links">
-                <p>004</p>
-                <p>HACKSRM</p>
-              </a>
-              <a href="./teams.html" class="links">
-                <p>005</p>
-                <p>TEAM</p>
-              </a>
-              <a href="./faq.html" class="links">
-                <p>006</p>
-                <p>FAQ</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="footerColumn">
-            <p class="linkHead">[PRO SHOWS]</p>
-            <div class="linkContainer">
-              <a href="./proshows.html" class="links">
-                <p>001</p>
-              </a>
-              <a href="./proshows.html" class="links">
-                <p>002</p>
-              </a>
-              <a href="./proshows.html" class="links">
-                <p>003</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="footerColumn">
-            <p class="linkHead">[EVENTS]</p>
-            <div class="linkContainer">
-              <a href="./cultural-events.html" class="links">
-                <p>001</p>
-                <p>CULTURAL</p>
-              </a>
-              <a href="./non-technical.html" class="links">
-                <p>002</p>
-                <p>NON TECHNICAL</p>
-              </a>
-              <a href="./technical-events.html" class="links">
-                <p>003</p>
-                <p>TECHNICAL</p>
-              </a>
-            </div>
-          </div>
-        </div>
+  <div id="footer">
+    <div class="footerTop">
+      <div class="footerLogo">
+        <p>[TECHNO-CULTURAL FEST]</p>
+        <h1>INFINITUS</h1>
       </div>
 
-      <div class="footerBottom">
-        <p>2026</p>
-
-        <div class="copyRights">
-          <div class="council">
-            <p>SRM UNIVERSITY-AP <br />POWERED BY STUDENT COUNCIL</p>
+      <div class="footerLinks">
+        <div class="footerColumn">
+          <p class="linkHead">[NAVIGATE]</p>
+          <div class="linkContainer">
+            <a href="./aboutus.html" class="links">
+              <p>001</p>
+              <p>ABOUT</p>
+            </a>
+            <a href="./proshows.html" class="links">
+              <p>002</p>
+              <p>PROSHOWS</p>
+            </a>
+            <a href="./technical-events.html" class="links">
+              <p>003</p>
+              <p>EVENTS</p>
+            </a>
+            <a href="https://hacksrm25.vercel.app/" class="links">
+              <p>004</p>
+              <p>HACKSRM</p>
+            </a>
+            <a href="./teams.html" class="links">
+              <p>005</p>
+              <p>TEAM</p>
+            </a>
+            <a href="./faq.html" class="links">
+              <p>006</p>
+              <p>FAQ</p>
+            </a>
           </div>
+        </div>
 
-          <div class="webTeam">
-            <p>
-              DESIGNED BY <br />
-              WEB TEAM
-            </p>
+        <div class="footerColumn">
+          <p class="linkHead">[PRO SHOWS]</p>
+          <div class="linkContainer">
+            <a href="./proshows.html" class="links">
+              <p>001</p>
+            </a>
+            <a href="./proshows.html" class="links">
+              <p>002</p>
+            </a>
+            <a href="./proshows.html" class="links">
+              <p>003</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="footerColumn">
+          <p class="linkHead">[EVENTS]</p>
+          <div class="linkContainer">
+            <a href="./cultural-events.html" class="links">
+              <p>001</p>
+              <p>CULTURAL</p>
+            </a>
+            <a href="./non-technical.html" class="links">
+              <p>002</p>
+              <p>NON TECHNICAL</p>
+            </a>
+            <a href="./technical-events.html" class="links">
+              <p>003</p>
+              <p>TECHNICAL</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <script src="/scripts/events-loader.js"></script>
-   
+    <div class="footerBottom">
+      <p>2026</p>
 
-    <script src="/scripts/favicon.js"></script>
-    <script src="/scripts/cursor.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/time.js"></script>
-    <script src="/scripts/teams-imgs.js"></script>
+      <div class="copyRights">
+        <div class="council">
+          <p>SRM UNIVERSITY-AP <br />POWERED BY STUDENT COUNCIL</p>
+        </div>
 
-    <!-- Menu Hover Effects -->
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="/scripts/menu-hover.js"></script>
+        <div class="webTeam">
+          <p>
+            DESIGNED BY <br />
+            WEB TEAM
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="/scripts/link-hover.js"></script>
-    <script src="/scripts/music.js"></script>
-    <script src="/scripts/scroll-text.js"></script>
+  <script src="/scripts/events-loader.js"></script>
 
-    <script>
-      // Menu functionality adapted from main.html
-      const menuButton = document.getElementById("menu-button");
-      const menuOverlay = document.getElementById("menu-overlay");
-      const menuClose = document.getElementById("menu-close");
 
-      let menuOpen = false;
-      let isMenuClosing = false;
-      let scrollLocked = false;
+  <script src="/scripts/favicon.js"></script>
+  <script src="/scripts/cursor.js"></script>
+  <script src="/scripts/menu.js"></script>
+  <script src="/scripts/time.js"></script>
+  <script src="/scripts/teams-imgs.js"></script>
 
-      function openMenu() {
-        if (isMenuClosing) return;
+  <!-- Menu Hover Effects -->
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="/scripts/menu-hover.js"></script>
 
-        menuOpen = true;
+  <script src="/scripts/link-hover.js"></script>
+  <script src="/scripts/music.js"></script>
+  <script src="/scripts/scroll-text.js"></script>
+
+  <script>
+    // Menu functionality adapted from main.html
+    const menuButton = document.getElementById("menu-button");
+    const menuOverlay = document.getElementById("menu-overlay");
+    const menuClose = document.getElementById("menu-close");
+
+    let menuOpen = false;
+    let isMenuClosing = false;
+    let scrollLocked = false;
+
+    function openMenu() {
+      if (isMenuClosing) return;
+
+      menuOpen = true;
+      isMenuClosing = false;
+
+      // Remove closing class if it exists
+      menuOverlay.classList.remove("closing");
+
+      // Hide menu button immediately
+      menuButton.style.opacity = "0";
+      menuButton.style.pointerEvents = "none";
+
+      // Add active class after a tiny delay to ensure CSS reset
+      setTimeout(() => {
+        menuOverlay.classList.add("active");
+      }, 10);
+
+      // Disable main scroll when menu is open
+      scrollLocked = true;
+      document.body.style.overflow = "hidden";
+
+      // Play menu video if available
+      const menuVideo = document.querySelector(".menu-video");
+      if (menuVideo) {
+        menuVideo.play().catch((e) => {
+          console.log("Menu video play failed:", e);
+        });
+      }
+    }
+
+    function closeMenu() {
+      if (!menuOpen || isMenuClosing) return;
+
+      isMenuClosing = true;
+
+      // Start closing animation
+      menuOverlay.classList.add("closing");
+      menuOverlay.classList.remove("active");
+
+      // Show menu button with delay
+      setTimeout(() => {
+        menuButton.style.opacity = "1";
+        menuButton.style.pointerEvents = "auto";
+      }, 400);
+
+      // Pause menu video if available
+      const menuVideo = document.querySelector(".menu-video");
+      if (menuVideo) {
+        menuVideo.pause();
+      }
+
+      // Wait for animation to complete before resetting state
+      setTimeout(() => {
+        menuOpen = false;
         isMenuClosing = false;
-
-        // Remove closing class if it exists
         menuOverlay.classList.remove("closing");
 
-        // Hide menu button immediately
-        menuButton.style.opacity = "0";
-        menuButton.style.pointerEvents = "none";
+        // Re-enable main scroll when menu is closed
+        scrollLocked = false;
+        document.body.style.overflow = "";
+      }, 900);
+    }
 
-        // Add active class after a tiny delay to ensure CSS reset
-        setTimeout(() => {
-          menuOverlay.classList.add("active");
-        }, 10);
+    // Event Listeners
+    if (menuButton) menuButton.addEventListener("click", openMenu);
+    if (menuClose) menuClose.addEventListener("click", closeMenu);
 
-        // Disable main scroll when menu is open
-        scrollLocked = true;
-        document.body.style.overflow = "hidden";
-
-        // Play menu video if available
-        const menuVideo = document.querySelector(".menu-video");
-        if (menuVideo) {
-          menuVideo.play().catch((e) => {
-            console.log("Menu video play failed:", e);
-          });
-        }
+    // Close menu on escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menuOpen && !isMenuClosing) {
+        closeMenu();
       }
+    });
 
-      function closeMenu() {
-        if (!menuOpen || isMenuClosing) return;
-
-        isMenuClosing = true;
-
-        // Start closing animation
-        menuOverlay.classList.add("closing");
-        menuOverlay.classList.remove("active");
-
-        // Show menu button with delay
-        setTimeout(() => {
-          menuButton.style.opacity = "1";
-          menuButton.style.pointerEvents = "auto";
-        }, 400);
-
-        // Pause menu video if available
-        const menuVideo = document.querySelector(".menu-video");
-        if (menuVideo) {
-          menuVideo.pause();
-        }
-
-        // Wait for animation to complete before resetting state
-        setTimeout(() => {
-          menuOpen = false;
-          isMenuClosing = false;
-          menuOverlay.classList.remove("closing");
-
-          // Re-enable main scroll when menu is closed
-          scrollLocked = false;
-          document.body.style.overflow = "";
-        }, 900);
-      }
-
-      // Event Listeners
-      if (menuButton) menuButton.addEventListener("click", openMenu);
-      if (menuClose) menuClose.addEventListener("click", closeMenu);
-
-      // Close menu on escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && menuOpen && !isMenuClosing) {
+    // Close menu when clicking on menu overlay background
+    if (menuOverlay) {
+      menuOverlay.addEventListener("click", (e) => {
+        if (e.target === menuOverlay && menuOpen && !isMenuClosing) {
           closeMenu();
         }
       });
+    }
+  </script>
+</body>
 
-      // Close menu when clicking on menu overlay background
-      if (menuOverlay) {
-        menuOverlay.addEventListener("click", (e) => {
-          if (e.target === menuOverlay && menuOpen && !isMenuClosing) {
-            closeMenu();
-          }
-        });
-      }
-    </script>
-  </body>
 </html>
